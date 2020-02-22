@@ -3,13 +3,13 @@ author: 'Tony Vattathil'
 description: 'asciidoctor Build action'
 
 branding:
-  icon: 'file'  
+  icon: 'file'
   color: 'green'
 inputs:
     program:
         description: 'asciidoctor '
         required: true
-        default: 'asciidoctor -D docs --backend=html5 index.adoc  -o index.html'
+        default: 'asciidoctor -D docs --backend=html5 docs/index.adoc  -o index.html'
 runs:
     using: 'docker'
     image: 'Dockerfile'
@@ -18,5 +18,3 @@ runs:
 outputs:
     time:
         description: 'Action Completed'
-    
-    
