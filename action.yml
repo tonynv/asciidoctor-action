@@ -1,0 +1,22 @@
+name: 'build asciidoctor action'
+author: 'Tony Vattathil'
+description: 'asciidoctor Build action'
+
+branding:
+  icon: 'file'  
+  color: 'green'
+inputs:
+    program:
+        description: 'asciidoctor '
+        required: true
+        default: 'asciidoctor -D docs --backend=html5 index.adoc  -o index.html'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.program }}
+outputs:
+    time:
+        description: 'Action Completed'
+    
+    
