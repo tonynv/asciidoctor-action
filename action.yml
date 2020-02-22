@@ -9,7 +9,7 @@ inputs:
     program:
         description: 'asciidoctor '
         required: true
-        default: 'asciidoctor -D docs --backend=html5 docs/index.adoc  -o index.html'
+        default: 'asciidoctor -D docs --backend=html5 -o index.html docs/index.adoc'
 runs:
     using: 'docker'
     image: 'Dockerfile'
