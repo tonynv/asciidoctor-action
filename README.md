@@ -25,8 +25,8 @@ jobs:
       run: echo "Time ${{ steps.adocbuild.outputs.time }}"
     - name: Deploy docs to ghpages
       uses: peaceiris/actions-gh-pages@v3
-      env:
+      with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./
+        publish_branch: gh-pages
+        publish_dir: ./
 ```
