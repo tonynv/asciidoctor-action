@@ -12,7 +12,7 @@ on:
 jobs:
   adoc_build:
     runs-on: ubuntu-18.04
-    name: asciidoctor -D docs --backend=html5 -o index.html -a toc2 ddocs/index.adoc 
+    name: asciidoctor -D docs --backend=html5 -o index.html -a toc2 docs/index.adoc 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
