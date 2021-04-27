@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v2
     - name: Get build container
       id: adocbuild
-      uses: avattathil/asciidoctor-action@master
+      uses: tonynv/asciidoctor-action@master
       with:
           program: "asciidoctor -D docs --backend=html5 -o index.html docs/index.adoc"
     - name: Print execution time
