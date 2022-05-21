@@ -2,7 +2,7 @@
 
 To use this action add the below config to  **.github/workflows/adocs-build.yml**
 
-```
+```yaml
 name: build adocs
 
 on:
