@@ -11,7 +11,7 @@ on:
     - main
 jobs:
   adoc_build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     name: asciidoctor -D docs --backend=html5 -o index.html -a toc2 docs/index.adoc 
     steps:
     - name: Checkout code
